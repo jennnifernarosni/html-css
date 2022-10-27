@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1{
+
+            /*Se eu quiser transformar minha caixa h1 em inline basta colocar
+             display:inline;*/
+             
+            color: rgb(0, 0, 0);
+            background-color: rgb(206, 226, 159);
+            height: 300px;
+            width:300px ;
+
+            
+        
+            border: 40px solid tomato;
+
+            /*border-width: 10px
+              border-style:10px
+              border-color: tomato
+              
+              abaixo o modelo shorhand*/
+
+
+            padding:40px 40px 40px 40px;
+
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;*/
+
+            /*temos a maneira de colocar padding: 10px uma vez só. Pois todos os valores são iguais.
+            
+               Quando coloco padding: 10px 20 px duas vezes, ele vai se configurar como 10px para em baixo e em cima e 20px para esquerda e direita*/
+
+            
+            margin: 60px;
+
+            /*margin-top: 40px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;*/
+
+
+
+           outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+        }
+        a{
+            border-width: 5px;
+            border-style: double;
+            border-color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Exemplo de Caixa BOX-LEVEL</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> são exemplo de caixas inline-level</a> Vamos ver como isso tudo funciona. </p>
+</body>
+</html>
