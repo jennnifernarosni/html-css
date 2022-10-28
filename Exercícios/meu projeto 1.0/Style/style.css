@@ -70,21 +70,29 @@ nav{
     background-color: var(--cor3);
     padding: 10px;
     box-shadow: 0 7px 7px black;
-    max-width: 1022px;
-    margin: auto;
-    text-align: left;
-
-
+    padding: 10px;
+  
+ 
     
 }
+
+.menu{
+    max-width: 100%;
+    
+    margin: auto;
+}
+
 
 nav > a{
     color: white;
     padding:10px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-}
+    border-radius: 5px;}
+    
+  
+   
+
 
 nav > a:hover{
     background-color: var(--cor2);
