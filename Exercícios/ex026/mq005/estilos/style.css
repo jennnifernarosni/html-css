@@ -21,6 +21,7 @@ header{
     width: 90vw;
     display: block;
     margin: auto;
+    padding: 10px;
 }
 
 header h1{
