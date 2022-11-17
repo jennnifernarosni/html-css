@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+/*Todas as demais versões
+Pequenas telas: até 600px
+Mobile- 600px até 768px
+Tablet- 768px até 992px
+Desktop- 992px até 1200px
+Grandes telas: acimas de 1200px
+
+
+
+*/
+
+
+@media print{ /* PRINT*/
+    
+
+    main{
+        border: 2px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+
+    main::after{
+        content: 'Esse conteúdo foi impresso através do curso em vídeo';
+        text-decoration: overline;
+    }
+    
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+       
+    }
+
+            img#phone{display: none;}
+            img#tablet{display: none;}
+            img#desktop{display: none;}
+            img#tv{display: none;}
+            img#print{display: block;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) { /* TABLET*/
+    body{
+        background-image: url(../back-tablet.jpg)
+    
+    }
+
+            img#phone{display: none;}
+            img#tablet{display: block;}
+            img#desktop{display: none;}
+            img#tv{display: none;}
+            img#print{display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) { /* DESKTOP*/
+    body{
+        background-image: url(../back-pc.jpg);
+    }
+
+    
+            img#phone{display: none;}
+            img#tablet{display: none;}
+            img#desktop{display: block;}
+            img#tv{display: none;}
+            img#print{display: none;}
+
+}
+
+@media screen and (min-width: 1200px) { /* TV*/
+    body{
+        background-image: url(../back-tv.jpg);
+    }
+
+    main{
+        width: 1400px;
+    }
+
+            img#phone{display: none;}
+            img#tablet{display: none;}
+            img#desktop{display: none;}
+            img#tv{display: block;}
+            img#print{display: none;}
+}
